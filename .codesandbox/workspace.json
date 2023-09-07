@@ -1,1 +1,28 @@
-print ("hello world!")
+import random
+choices =("Rock, Paper or Scissor")
+computer = random.choice(choices)
+player = False
+while True:
+    player = input("Rock, Paper or Scissor")
+    ## Conditions of Rock, Paper, Sissors
+    if player == computer:
+        print ("Tie")
+    elif player == "Paper":
+        if computer == "Rock":
+         print ("You win")
+    elif player == "Rock":
+        if computer == "Paper":
+            print("You lose Bitch")
+    elif player == "Scissor":
+        if computer == "Paper":
+         print ("You win")
+    elif player == "Paper":
+        if computer == "Scissor":
+         print ("You lose Bitch")
+    elif player == "Rock":
+        if computer == "Scissor":
+         print ("You win")
+    elif player == "Scissor":
+        if computer == "Rock":
+         print ("You lose Bitch")
+         break
